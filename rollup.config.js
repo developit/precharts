@@ -33,7 +33,8 @@ export default {
 			'react-dom/server': __dirname+'/src/compat.js',
 			'react-dom': __dirname+'/src/compat.js',
 			'react': __dirname+'/src/compat.js',
-			'invariant': __dirname+'/src/empty.js'
+			'invariant': __dirname+'/src/empty.js',
+			'proptypes': __dirname+'/src/proptypes.js'
 		}),
 		commonjs({
 			include: 'node_modules/**',
