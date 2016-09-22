@@ -70,7 +70,6 @@
     "npm-run-all": "^3.0.0",
     "phantomjs-prebuilt": "^2.1.12",
     "preact": "^6.0.2",
-    "preact-compat": "^3.1.0",
     "pretty-bytes-cli": "^2.0.0",
     "recharts": "^0.14.2",
     "rimraf": "^2.5.4",
@@ -89,6 +88,7 @@
   },
   "dependencies": {
     "core-js": "^2.4.1",
+    "preact-compat": "^3.1.0",
     "preact-render-to-string": "^3.1.1",
     "preact-transition-group": "^1.1.0"
   }
