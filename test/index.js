@@ -45,6 +45,8 @@ describe('precharts', () => {
 			</ComposedChart>
 		), scratch);
 
+		// console.log(scratch.innerHTML);
+
 		expect($('.recharts-cartesian-grid-horizontal line[stroke="#ccc"]')).to.have.lengthOf(5);
 		expect($('.recharts-cartesian-grid-vertical line[stroke="#ccc"]')).to.have.lengthOf(8);
 

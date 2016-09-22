@@ -16,6 +16,7 @@ export default {
 	globals: {
 		'lodash': 'lodash',
 		'preact-compat': 'preactCompat',
+		'preact-compat/legacy': 'preactCompat',
 		'preact-render-to-string': 'preactRenderToString',
 		'classnames': 'classnames'
 	},
