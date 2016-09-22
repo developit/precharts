@@ -31,15 +31,13 @@ const DATA = [
 ];
 
 render((
-	render((
-		<ComposedChart width={500} height={200} data={DATA}>
-			<XAxis dataKey="name" orientation="bottom" height={20} />
-			<CartesianGrid strokeDasharray="3 3" />
-			<Line dataKey="a" stroke="red" />
-			<Area dataKey="b" fill="green" opacity={.3} />
-			<Tooltip />
-		</ComposedChart>
-	), scratch);
+	<ComposedChart width={500} height={200} data={DATA}>
+		<XAxis dataKey="name" orientation="bottom" height={20} />
+		<CartesianGrid strokeDasharray="3 3" />
+		<Line dataKey="a" stroke="red" />
+		<Area dataKey="b" fill="green" opacity={.3} />
+		<Tooltip />
+	</ComposedChart>
 ), document.body);
 ```
 

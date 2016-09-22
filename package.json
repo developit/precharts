@@ -95,6 +95,7 @@
     "lodash": "^4.16.1",
     "preact-compat": "^3.1.0",
     "preact-render-to-string": "^3.1.1",
-    "preact-transition-group": "^1.1.0"
+    "preact-transition-group": "^1.1.0",
+    "raf": "^3.3.0"
   }
 }
