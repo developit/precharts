@@ -87,7 +87,12 @@
     "webpack": "^1.13.2"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "core-js": "^2.4.1",
+    "d3-scale": "^1.0.3",
+    "d3-shape": "^1.0.3",
+    "element-resize-detector": "^1.1.8",
+    "lodash": "^4.16.1",
     "preact-compat": "^3.1.0",
     "preact-render-to-string": "^3.1.1",
     "preact-transition-group": "^1.1.0"
