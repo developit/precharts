@@ -71,7 +71,7 @@
     "phantomjs-prebuilt": "^2.1.12",
     "preact": "^6.0.2",
     "pretty-bytes-cli": "^2.0.0",
-    "recharts": "^0.14.2",
+    "recharts": "^0.15.0",
     "rimraf": "^2.5.4",
     "rollup": "^0.36.0",
     "rollup-plugin-alias": "^1.2.0",
