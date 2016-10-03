@@ -1,7 +1,7 @@
 {
   "name": "precharts",
   "amdName": "precharts",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Wraps Recharts up for Preact, without preact-compat",
   "main": "dist/precharts.js",
   "src:main": "src/index.js",
