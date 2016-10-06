@@ -33,14 +33,14 @@ describe('precharts', () => {
 		expect(Tooltip).to.be.a('function');
 	});
 
-	it('should render the example', () => {
+	it('should render the static example', () => {
 		render((
 			<ComposedChart width={500} height={200} data={DATA}>
 				<XAxis dataKey="name" orientation="bottom" height={20} />
 				<CartesianGrid strokeDasharray="3 3" />
-				<Line dataKey="pv" stroke="blue" />
-				<Line dataKey="uv" stroke="red" />
-				<Area dataKey="amt" fill='green' opacity={.25} />
+				<Line dataKey="pv" stroke="blue" isAnimationActive={false} />
+				<Line dataKey="uv" stroke="red" isAnimationActive={false} />
+				<Area dataKey="amt" fill='green' opacity={.25} isAnimationActive={false} />
 				<Tooltip />
 			</ComposedChart>
 		), scratch);
@@ -53,5 +53,30 @@ describe('precharts', () => {
 		expect($('circle[stroke="blue"]')).to.have.lengthOf(7);
 		expect($('circle[stroke="red"]')).to.have.lengthOf(7);
 		expect($('path[fill="green"]'), 'area paths').to.have.lengthOf(1);
+	});
+
+	it('should render the animated example', done => {
+		render((
+			<ComposedChart width={500} height={200} data={DATA}>
+				<XAxis dataKey="name" orientation="bottom" height={20} />
+				<CartesianGrid strokeDasharray="3 3" />
+				<Line dataKey="pv" stroke="blue" animationDuration={200} />
+				<Line dataKey="uv" stroke="red" animationDuration={200} />
+				<Area dataKey="amt" fill='green' opacity={.25} animationDuration={200} />
+				<Tooltip />
+			</ComposedChart>
+		), scratch);
+
+		// wait for the 200ms animation to end.
+		setTimeout( () => {
+			expect($('.recharts-cartesian-grid-horizontal line[stroke="#ccc"]')).to.have.lengthOf(5);
+			expect($('.recharts-cartesian-grid-vertical line[stroke="#ccc"]')).to.have.lengthOf(9);
+
+			expect($('circle[stroke="blue"]')).to.have.lengthOf(7);
+			expect($('circle[stroke="red"]')).to.have.lengthOf(7);
+			expect($('path[fill="green"]'), 'area paths').to.have.lengthOf(1);
+
+			done();
+		}, 500);
 	});
 });
