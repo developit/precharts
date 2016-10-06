@@ -1,9 +1,6 @@
 /** @jsx h */
-import { h, render, options } from 'preact';
+import { h, render } from 'preact';
 import { ComposedChart, Area, Line, XAxis, YAxis, CartesianGrid, Tooltip } from '../';
-
-// disable async rendering entirely to make tests simpler
-options.debounceRendering = f => f();
 
 const DATA = [
 	{ name: 'Page A', uv: 4000, pv: 2400, amt: 2400 },
