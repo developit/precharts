@@ -70,7 +70,7 @@
     "npm-run-all": "^3.0.0",
     "phantomjs-prebuilt": "^2.1.12",
     "pretty-bytes-cli": "^2.0.0",
-    "recharts": "github:billneff79/recharts#v1.1.0",
+    "recharts": "github:billneff79/recharts#v1.1.4",
     "rimraf": "^2.5.4",
     "rollup": "^0.36.1",
     "rollup-plugin-alias": "^1.2.0",
