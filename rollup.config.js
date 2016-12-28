@@ -27,7 +27,7 @@ export default {
 		}),
 		alias({
 			'react-addons-transition-group': __dirname+'/node_modules/preact-transition-group/src/index.js',
-			'react-container-dimensions': require.resolve('react-container-dimensions'),
+			'react-resize-detector': __dirname+'/node_modules/react-resize-detector/lib/index.js',
 			'react-smooth': __dirname+'/node_modules/react-smooth/src/index.js',
 			'recharts-scale': __dirname+'/node_modules/recharts-scale/src/index.js',
 			'recharts': __dirname+'/node_modules/recharts/src/index.js',
