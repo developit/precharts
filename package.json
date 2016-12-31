@@ -67,7 +67,7 @@
     "karma-webpack": "^1.8.0",
     "mkdirp": "^0.5.1",
     "mocha": "^3.1.0",
-    "npm-run-all": "^3.0.0",
+    "npm-run-all": "^4.0.0",
     "phantomjs-prebuilt": "^2.1.12",
     "pretty-bytes-cli": "^2.0.0",
     "recharts": "github:billneff79/recharts#v1.1.4",
