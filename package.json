@@ -91,7 +91,7 @@
     "d3-scale": "^1.0.4",
     "d3-shape": "^1.0.4",
     "element-resize-detector": "^1.1.10",
-    "lodash": "^4.17.3",
+    "lodash": "^4.17.4",
     "preact": "^7.1.0",
     "preact-compat": "^3.9.4",
     "preact-transition-group": "^1.1.0",
