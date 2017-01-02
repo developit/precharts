@@ -1,26 +1,45 @@
-/* eslint-disable */
 import fs from 'fs';
 import memory from 'rollup-plugin-memory';
 import alias from 'rollup-plugin-alias';
 import commonjs from 'rollup-plugin-commonjs';
+import builtins from 'rollup-plugin-node-builtins';
 import replace from 'rollup-plugin-replace';
 import babel from 'rollup-plugin-babel';
-import es3 from 'rollup-plugin-es3';
 
-let babelRc = JSON.parse(fs.readFileSync('.babelrc','utf8'));
+const babelRc = JSON.parse(fs.readFileSync('.babelrc', 'utf8'));
 
 export default {
 	exports: 'default',
 	context: 'window',
 	useStrict: false,
 	globals: {
+		'classnames': 'classnames',
+		'core-js/es6/math': 'coreJs_es6_math',
+		'd3-scale': 'd3Scales',
+		'd3-shape': 'd3Shape',
+		'events': 'EventEmitter',
 		'lodash': 'lodash',
+		'preact': 'preact',
 		'preact-compat': 'preactCompat',
 		'preact-compat/legacy': 'preactCompat',
 		'preact-render-to-string': 'preactRenderToString',
-		'classnames': 'classnames'
+		'raf': 'raf',
+		'reduce-css-calc': 'reduceCSSCalc'
 	},
+	external: [
+		'classnames',
+		'core-js/es6/math',
+		'd3-scale',
+		'd3-shape',
+		'events',
+		'lodash',
+		'preact',
+		'preact-compat/legacy',
+		'raf',
+		'reduce-css-calc'
+	],
 	plugins: [
+		builtins(),
 		memory({
 			path: 'src/index',
 			contents: "import * as lib from './index'; export default lib;"
@@ -53,11 +72,10 @@ export default {
 					modules: false
 				}]
 			].concat(babelRc.presets.slice(1)),
-			plugins: babelRc.plugins.concat("external-helpers")
+			plugins: babelRc.plugins.concat('external-helpers')
 		}),
 		replace({
 			'process.env.NODE_ENV': JSON.stringify('production')
-		}),
-		es3()
+		})
 	]
 };
