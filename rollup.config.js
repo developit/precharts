@@ -2,7 +2,6 @@ import fs from 'fs';
 import memory from 'rollup-plugin-memory';
 import alias from 'rollup-plugin-alias';
 import commonjs from 'rollup-plugin-commonjs';
-import builtins from 'rollup-plugin-node-builtins';
 import replace from 'rollup-plugin-replace';
 import babel from 'rollup-plugin-babel';
 
@@ -37,7 +36,6 @@ export default {
 		'reduce-css-calc'
 	],
 	plugins: [
-		builtins(),
 		memory({
 			path: 'src/index',
 			contents: "import * as lib from './index'; export default lib;"
