@@ -90,6 +90,7 @@
     "d3-scale": "^1.0.4",
     "d3-shape": "^1.0.4",
     "element-resize-detector": "^1.1.10",
+    "eventemitter3": "^2.0.2",
     "lodash": "^4.17.4",
     "preact": "^7.1.0",
     "preact-compat": "^3.9.4",
