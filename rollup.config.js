@@ -1,25 +1,40 @@
-/* eslint-disable */
 import fs from 'fs';
 import memory from 'rollup-plugin-memory';
 import alias from 'rollup-plugin-alias';
 import commonjs from 'rollup-plugin-commonjs';
 import replace from 'rollup-plugin-replace';
 import babel from 'rollup-plugin-babel';
-import es3 from 'rollup-plugin-es3';
 
-let babelRc = JSON.parse(fs.readFileSync('.babelrc','utf8'));
+const babelRc = JSON.parse(fs.readFileSync('.babelrc', 'utf8'));
 
 export default {
 	exports: 'default',
 	context: 'window',
 	useStrict: false,
 	globals: {
+		'classnames': 'classnames',
+		'core-js/es6/math': 'coreJs_es6_math',
+		'd3-scale': 'd3Scales',
+		'd3-shape': 'd3Shape',
 		'lodash': 'lodash',
+		'preact': 'preact',
 		'preact-compat': 'preactCompat',
 		'preact-compat/legacy': 'preactCompat',
 		'preact-render-to-string': 'preactRenderToString',
-		'classnames': 'classnames'
+		'raf': 'raf',
+		'reduce-css-calc': 'reduceCSSCalc'
 	},
+	external: [
+		'classnames',
+		'core-js/es6/math',
+		'd3-scale',
+		'd3-shape',
+		'lodash',
+		'preact',
+		'preact-compat/legacy',
+		'raf',
+		'reduce-css-calc'
+	],
 	plugins: [
 		memory({
 			path: 'src/index',
@@ -31,6 +46,7 @@ export default {
 			'react-smooth': __dirname+'/node_modules/react-smooth/src/index.js',
 			'recharts-scale': __dirname+'/node_modules/recharts-scale/src/index.js',
 			'recharts': __dirname+'/node_modules/recharts/src/index.js',
+			'events': __dirname+'/node_modules/eventemitter3/index.js',
 			'react-dom/server': __dirname+'/src/compat.js',
 			'react-dom': __dirname+'/src/compat.js',
 			'react': __dirname+'/src/compat.js',
@@ -53,11 +69,10 @@ export default {
 					modules: false
 				}]
 			].concat(babelRc.presets.slice(1)),
-			plugins: babelRc.plugins.concat("external-helpers")
+			plugins: babelRc.plugins.concat('external-helpers')
 		}),
 		replace({
 			'process.env.NODE_ENV': JSON.stringify('production')
-		}),
-		es3()
+		})
 	]
 };
