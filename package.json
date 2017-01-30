@@ -81,7 +81,7 @@
     "sinon": "^1.17.7",
     "sinon-chai": "^2.8.0",
     "uglify-js": "^2.7.5",
-    "webpack": "^1.14.0"
+    "webpack": "^2.2.1"
   },
   "dependencies": {
     "classnames": "^2.2.5",
