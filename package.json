@@ -80,7 +80,7 @@
     "rollup-plugin-replace": "^1.1.1",
     "sinon": "^1.17.7",
     "sinon-chai": "^2.8.0",
-    "uglify-js": "^2.7.5",
+    "uglify-js": "^2.8.0",
     "webpack": "^1.14.0"
   },
   "dependencies": {
