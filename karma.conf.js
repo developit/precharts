@@ -12,10 +12,10 @@ module.exports = function(config) {
 
 		webpack: {
 			module: {
-				loaders: [{
+				rules: [{
 					test: /\.jsx?$/,
-					exclude: /\b(node_modules|dist)\b/,
-					loader: 'babel'
+					loader: 'babel-loader',
+					exclude: /\b(node_modules|dist)\b/
 				}]
 			},
 			resolve: {
