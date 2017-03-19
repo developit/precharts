@@ -73,7 +73,7 @@
     "recharts": "^0.21.2",
     "rimraf": "^2.6.1",
     "rollup": "^0.40.1",
-    "rollup-plugin-alias": "^1.2.0",
+    "rollup-plugin-alias": "^1.2.1",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^7.0.0",
     "rollup-plugin-memory": "^2.0.0",
