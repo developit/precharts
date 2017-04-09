@@ -91,7 +91,7 @@
     "element-resize-detector": "^1.1.11",
     "eventemitter3": "^2.0.2",
     "lodash": "^4.17.4",
-    "preact": "^7.2.1",
+    "preact": "^8.1.0",
     "preact-compat": "^3.14.3",
     "preact-transition-group": "^1.1.0",
     "raf": "^3.3.0",
