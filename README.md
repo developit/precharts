@@ -1,5 +1,7 @@
 # Precharts
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/developit/precharts.svg)](https://greenkeeper.io/)
+
 [![NPM](http://img.shields.io/npm/v/precharts.svg)](https://www.npmjs.com/package/precharts)
 [![travis-ci](https://travis-ci.org/developit/precharts.svg)](https://travis-ci.org/developit/precharts)
 
