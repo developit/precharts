@@ -70,9 +70,9 @@
     "npm-run-all": "^4.0.2",
     "phantomjs-prebuilt": "^2.1.14",
     "pretty-bytes-cli": "^2.0.0",
-    "recharts": "^0.21.2",
+    "recharts": "^0.22.4",
     "rimraf": "^2.6.1",
-    "rollup": "^0.40.1",
+    "rollup": "^0.41.6",
     "rollup-plugin-alias": "^1.3.1",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^8.0.2",
@@ -80,7 +80,7 @@
     "rollup-plugin-replace": "^1.1.1",
     "sinon": "^2.2.0",
     "sinon-chai": "^2.10.0",
-    "uglify-js": "^2.8.23",
+    "uglify-js": "^3.0.1",
     "webpack": "^2.5.1"
   },
   "dependencies": {
@@ -95,6 +95,6 @@
     "preact-compat": "^3.16.0",
     "preact-transition-group": "^1.1.1",
     "raf": "^3.3.2",
-    "reduce-css-calc": "^1.3.0"
+    "reduce-css-calc": "^2.0.3"
   }
 }
