@@ -9,6 +9,7 @@
     "transform-react-remove-prop-types",
     "transform-class-properties",
     "transform-decorators-legacy",
-    "transform-object-assign"
+    "transform-object-assign",
+    "lodash"
   ]
 }
