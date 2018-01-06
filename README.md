@@ -7,9 +7,9 @@ Wraps [Recharts] up for [Preact], without using [preact-compat](https://github.c
 
 > Think of this as a version of `Precharts` that is pre-aliased to use preact in place of React.
 
-**See [Webpackbin Example](http://www.webpackbin.com/Eyhclj3ab):**
+**See [Webpackbin Example](https://www.webpackbin.com/bins/-L29GdZCQlStSHEgya-c):**
 
-[![demo](https://i.gyazo.com/9760d4a6d122902dcbd4a5252e745b47.gif)](http://www.webpackbin.com/NyiBJVphZ)
+[![demo](https://i.gyazo.com/9760d4a6d122902dcbd4a5252e745b47.gif)](https://www.webpackbin.com/bins/-L29GdZCQlStSHEgya-c)
 
 
 ---
